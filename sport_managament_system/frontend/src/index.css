@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    section {
+        @apply py-[75px]
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-full w-[1440px] px-5 mx-auto
+    }
+
+    .btn {
+        @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px]
+    }
+
+    .btnlogout {
+        @apply bg-yellow-300 py-[15px] px-[35px] rounded-[50px] text-black font-[600] mt-[38px] mb-[20px]
+    }
+
+    .heading {
+        @apply text-[44px] leading-[54px] font-[700] text-headingColor
+    }
+
+
+    .text__para {
+        @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px]
+    }
+
+    .header {
+        @apply bg-[url('./Assets/Images/images/header-bg.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px];
+    }
+
+    .bgImage {
+        @apply bg-[url('./Assets/Images/images/Blur.png')] bg-no-repeat bg-center bg-cover w-full;
+    }
+
+}
+
+@media(max-width:1024px) {
+
+    .container {
+        @apply w-full;
+    }
+
+    .section {
+        @apply py-[35px];
+    }
+}
+
+@media(max-width:768px) {
+
+    .heading {
+        @apply text-[26px] leading-[36px]
+    }
+
+    .text_para {
+        @apply text-[16px] leading-7 mt-3;
+    }
+}
